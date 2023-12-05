@@ -10,6 +10,9 @@ defmodule Aoc do
       defmodule unquote(module_name(year, day)) do
         @behaviour Aoc
 
+        @year unquote(year)
+        @day unquote(day)
+
         unquote(body)
       end
     end

@@ -9,7 +9,7 @@ aoc 2023, 2 do
     blue: 14
   }
 
-  def p1(input \\ Utils.get_input(2023, 2)) do
+  def p1(input \\ Utils.get_input(@year, @day)) do
     input
     |> String.split("\n", trim: true)
     |> Enum.map(fn s ->
@@ -31,7 +31,7 @@ aoc 2023, 2 do
     |> Enum.sum()
   end
 
-  def p2(input \\ Utils.get_input(2023, 2)) do
+  def p2(input \\ Utils.get_input(@year, @day)) do
     input
     |> String.split("\n", trim: true)
     |> Enum.map(fn s ->

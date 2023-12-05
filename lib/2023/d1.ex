@@ -3,7 +3,7 @@ import Aoc
 aoc 2023, 1 do
   alias Aoc.Utils
 
-  def p1(input \\ Utils.get_input(2023, 1)) do
+  def p1(input \\ Utils.get_input(@year, @day)) do
     input
     |> String.split("\n", trim: true)
     |> Enum.map(&String.replace(&1, ~r/[[:alpha:]]/, ""))
@@ -19,6 +19,6 @@ aoc 2023, 1 do
     |> Enum.sum()
   end
 
-  def p2(input \\ Utils.get_input(2023, 1)) do
+  def p2(input \\ Utils.get_input(@year, @day)) do
   end
 end
