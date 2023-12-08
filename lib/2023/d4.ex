@@ -31,5 +31,5 @@ aoc 2023, 4 do
 
   defp calc_points(0), do: 0
   defp calc_points(1), do: 1
-  defp calc_points(n), do: 2 * calc_points(n - 1)
+  defp calc_points(n), do: Integer.pow(2, n - 1)
 end
